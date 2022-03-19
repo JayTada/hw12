@@ -1,5 +1,4 @@
 
-
 import 'package:flutter/material.dart';
 import 'package:hw12/pages/home/home_page.dart';
 class loginpage extends StatefulWidget {
@@ -15,12 +14,8 @@ class _PinPageState extends State<loginpage> {
   var input;//n
   String _pass = '';
 
-
-
-
   @override
   Widget build(BuildContext context) {
-
 
 
     return Scaffold(//a
@@ -71,8 +66,6 @@ class _PinPageState extends State<loginpage> {
                   ],
                 ),
               ),
-
-
               Padding(//c
                 padding: const EdgeInsets.only(top: 0.0,bottom: 80.0),
                 child: Row(
@@ -102,18 +95,6 @@ class _PinPageState extends State<loginpage> {
                   ],
                 ),
               ),
-
-
-
-
-
-
-
-
-
-
-
-
 
               Row(//h
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -168,16 +149,9 @@ class _PinPageState extends State<loginpage> {
     return Padding(
       padding: const EdgeInsets.all(3.0),
 
-
-
-
-
-
       child: Container(
         width: 60.0,
         height: 60.0,
-
-
 
         decoration: BoxDecoration(
             color: Colors.white,
@@ -229,7 +203,6 @@ class _PinPageState extends State<loginpage> {
                     barrierDismissible: false,
                     builder: (BuildContext context) {
 
-
                       return AlertDialog(
                         title: Text('Incorrect PIN',style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold)),
                         content: Text(
@@ -252,13 +225,10 @@ class _PinPageState extends State<loginpage> {
                         ],
 
 
-
-
                       );
 
                     });
               }
-
 
               BorderRadius.circular(loginpage.buttonSize / 2);
               Container(
@@ -275,11 +245,6 @@ class _PinPageState extends State<loginpage> {
                 child: (num == -1) ? Icon(Icons.backspace_outlined) : Text('$num',style: TextStyle(
                     fontSize: 20.0),),
               );
-
-
-
-
-
 
             },
             child: Center(
@@ -298,15 +263,9 @@ class _PinPageState extends State<loginpage> {
                   ],
 
 
-
                 )
 
-
             )),
-
-
-
-
 
       ),
     );
